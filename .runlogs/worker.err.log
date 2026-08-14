@@ -1,0 +1,51 @@
+Traceback (most recent call last):
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: ai_jobs
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ch666\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\ch666\AppData\Local\Programs\Python\Python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\app\scripts\run_ai_worker.py", line 23, in <module>
+    main()
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\app\scripts\run_ai_worker.py", line 18, in main
+    if not worker.process_next():
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\app\ai\worker.py", line 139, in process_next
+    claimed = self.claim_next()
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\app\ai\worker.py", line 49, in claim_next
+    candidate = db.scalar(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2421, in scalar
+    return self._execute_internal(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2271, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\¿ÎÌÃ±Ê¼Ç\Î¬Ñ§_code\weixue-latest-2\backend\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: ai_jobs
+[SQL: SELECT ai_jobs.id, ai_jobs.session_id, ai_jobs.job_type, ai_jobs.status, ai_jobs.input_version, ai_jobs.attempts, ai_jobs.error_code, ai_jobs.lease_owner, ai_jobs.lease_expires_at, ai_jobs.next_run_at, ai_jobs.created_at, ai_jobs.updated_at 
+FROM ai_jobs 
+WHERE ai_jobs.job_type IN (?, ?, ?) AND ai_jobs.attempts < ? AND (ai_jobs.status = ? AND ai_jobs.next_run_at <= ? OR ai_jobs.status = ? AND ai_jobs.lease_expires_at <= ?) ORDER BY ai_jobs.next_run_at, ai_jobs.created_at
+ LIMIT ? OFFSET ?]
+[parameters: ('INITIAL_ANALYSIS', 'COACHING_QUESTION', 'FINAL_EVALUATION', 3, 'QUEUED', '2026-08-14 14:35:38.855008', 'RUNNING', '2026-08-14 14:35:38.855008', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

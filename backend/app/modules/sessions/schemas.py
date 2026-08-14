@@ -71,6 +71,10 @@ class FinalAnswerIn(VersionedActionIn):
     answer: str = Field(min_length=1, max_length=12000)
 
 
+class TranscriptionOut(BaseModel):
+    text: str
+
+
 class CoachingResponseIn(VersionedActionIn):
     answer: str = Field(min_length=1, max_length=12000)
 

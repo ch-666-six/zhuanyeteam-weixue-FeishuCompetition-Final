@@ -31,6 +31,10 @@ class Settings(BaseSettings):
     ai_worker_poll_seconds: float = Field(default=1.0, ge=0.1, le=60)
     ai_job_lease_seconds: int = Field(default=90, ge=10, le=600)
     ai_job_max_attempts: int = Field(default=3, ge=1, le=10)
+    xunfei_app_id: str = ""
+    xunfei_api_key: str = ""
+    xunfei_api_secret: str = ""
+    xunfei_iat_url: str = "wss://iat-api.xfyun.cn/v2/iat"
 
 
 @lru_cache

@@ -40,7 +40,7 @@ def create_managed_assignment(body: ManagedAssignmentCreateIn, db: Session = Dep
     assignments = [
         Assignment(
             id=str(uuid4()), title=body.title.strip(), prompt=body.prompt.strip(), grade=grade,
-            published_at=now, deadline=None,
+            input_type=body.input_type, published_at=now, deadline=None,
         )
         for grade in grades
     ]
@@ -59,6 +59,7 @@ def update_managed_assignment(assignment_id: str, body: ManagedAssignmentUpdateI
     assignment.title = body.title.strip()
     assignment.prompt = body.prompt.strip()
     assignment.grade = body.grade
+    assignment.input_type = body.input_type
     db.commit()
     db.refresh(assignment)
     return assignment
@@ -124,6 +125,7 @@ def list_assignments(
                 title=assignment.title,
                 prompt=assignment.prompt,
                 grade=assignment.grade,
+                input_type=assignment.input_type,
                 deadline=as_utc(assignment.deadline),
                 availability="CLOSED" if is_closed(assignment.deadline, now) else "OPEN",
                 session=session_snapshot(db, answer_session, assignment) if answer_session else None,
@@ -158,6 +160,7 @@ def get_assignment(
         title=assignment.title,
         prompt=assignment.prompt,
         grade=assignment.grade,
+        input_type=assignment.input_type,
         published_at=as_utc(assignment.published_at),
         deadline=as_utc(assignment.deadline),
         availability="CLOSED" if is_closed(assignment.deadline, now) else "OPEN",

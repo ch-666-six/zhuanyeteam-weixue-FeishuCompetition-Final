@@ -1,7 +1,7 @@
 import asyncio
 import json
 
-from fastapi import APIRouter, Depends, Header, Request, status
+from fastapi import APIRouter, Depends, Header, Query, Request, status
 from fastapi.responses import StreamingResponse
 from sqlalchemy.orm import Session
 
@@ -26,14 +26,45 @@ from app.modules.sessions.application import (
     submit_final_answer,
     submit_initial_answer,
 )
-from app.modules.sessions.schemas import CoachingOut, CoachingResponseIn, CreateSessionIn, FinalAnswerIn, FinalEvaluationOut, InitialAnalysisOut, InitialAnswerIn, SessionSnapshotOut, VersionedActionIn
+from app.modules.sessions.schemas import CoachingOut, CoachingResponseIn, CreateSessionIn, FinalAnswerIn, FinalEvaluationOut, InitialAnalysisOut, InitialAnswerIn, SessionSnapshotOut, TranscriptionOut, VersionedActionIn
 from app.modules.sessions.models import CoachingTurn
+from app.speech.xunfei import SpeechTranscriptionError, XunfeiTranscriber
 
 router = APIRouter(prefix="/sessions", tags=["answer sessions"])
 
 
 def get_ai_gateway(request: Request) -> AiGateway:
     return request.app.state.ai_gateway
+
+
+@router.post("/{session_id}/transcriptions", response_model=TranscriptionOut)
+async def transcribe_answer(
+    session_id: str,
+    request: Request,
+    stage: str = Query(pattern="^(initial|final)$"),
+    student: Student = Depends(get_current_student),
+    db: Session = Depends(get_db),
+) -> TranscriptionOut:
+    answer_session, assignment = get_session_by_id(db, session_id, student)
+    expected_phase = "INITIAL_DRAFT" if stage == "initial" else "FINAL_DRAFT"
+    if assignment.input_type != "VOICE" or answer_session.phase != expected_phase:
+        from app.modules.sessions.application import domain_error
+        raise domain_error(status.HTTP_409_CONFLICT, "VOICE_INPUT_NOT_ALLOWED", "当前作业或阶段不能录制作答。")
+    payload = await request.body()
+    if len(payload) > 2_000_044:
+        from app.modules.sessions.application import domain_error
+        raise domain_error(status.HTTP_413_REQUEST_ENTITY_TOO_LARGE, "AUDIO_TOO_LARGE", "单次录音不能超过 60 秒。")
+    transcriber: XunfeiTranscriber = request.app.state.speech_transcriber
+    try:
+        return TranscriptionOut(text=await transcriber.transcribe_wav(payload))
+    except SpeechTranscriptionError as exc:
+        from app.modules.sessions.application import domain_error
+        not_configured = "尚未配置" in str(exc)
+        raise domain_error(
+            status.HTTP_503_SERVICE_UNAVAILABLE if not_configured else status.HTTP_422_UNPROCESSABLE_ENTITY,
+            "SPEECH_NOT_CONFIGURED" if not_configured else "SPEECH_TRANSCRIPTION_FAILED",
+            str(exc),
+        ) from exc
 
 
 @router.post("", response_model=SessionSnapshotOut, status_code=status.HTTP_201_CREATED)

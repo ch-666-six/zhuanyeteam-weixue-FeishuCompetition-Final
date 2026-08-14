@@ -14,6 +14,7 @@ from app.ai.provider import build_ai_provider
 from app.api import api_router
 from app.config import Settings, get_settings
 from app.infrastructure.database import create_session_factory
+from app.speech.xunfei import XunfeiTranscriber
 
 
 def create_app(settings: Optional[Settings] = None) -> FastAPI:
@@ -37,6 +38,12 @@ def create_app(settings: Optional[Settings] = None) -> FastAPI:
         active_settings.deepseek_model,
     )
     app.state.ai_gateway = AiGateway(app.state.ai_provider)
+    app.state.speech_transcriber = XunfeiTranscriber(
+        active_settings.xunfei_app_id,
+        active_settings.xunfei_api_key,
+        active_settings.xunfei_api_secret,
+        active_settings.xunfei_iat_url,
+    )
 
     app.add_middleware(
         CORSMiddleware,

@@ -1,5 +1,5 @@
 import type { CoachingRecord, FinalEvaluationResult, InitialAnalysisResult, SessionSnapshot } from '../../shared/api/types'
-import { API_BASE_URL, request } from '../../shared/api/http'
+import { API_BASE_URL, ApiError, request } from '../../shared/api/http'
 
 export function createSession(token: string, assignmentId: string, idempotencyKey: string): Promise<SessionSnapshot> {
   return request('/sessions', {
@@ -10,6 +10,18 @@ export function createSession(token: string, assignmentId: string, idempotencyKe
     },
     body: JSON.stringify({ assignment_id: assignmentId }),
   })
+}
+
+export async function transcribeAnswer(token: string, sessionId: string, stage: 'initial' | 'final', audio: Blob): Promise<string> {
+  const response = await fetch(`${API_BASE_URL}/sessions/${sessionId}/transcriptions?stage=${stage}`, {
+    method: 'POST', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'audio/wav' }, body: audio,
+  })
+  const body = await response.json().catch(() => null)
+  if (!response.ok) {
+    const detail = body?.detail ?? body
+    throw new ApiError(detail?.message ?? '语音转写失败，请重新录制。', response.status, detail?.code ?? 'SPEECH_TRANSCRIPTION_FAILED')
+  }
+  return body.text
 }
 
 export function getInitialAnalysis(token: string, sessionId: string): Promise<InitialAnalysisResult> {

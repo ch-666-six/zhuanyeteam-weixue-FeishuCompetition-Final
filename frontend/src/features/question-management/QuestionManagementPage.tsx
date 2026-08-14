@@ -1,8 +1,8 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { ArrowLeft, BookOpen, Check, Pencil, Plus, RefreshCw, Trash2, X } from 'lucide-react'
+import { ArrowLeft, BookOpen, Check, Keyboard, Mic, Pencil, Plus, RefreshCw, Trash2, X } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import type { ManagedAssignment } from '../../shared/api/types'
+import type { AssignmentInputType, ManagedAssignment } from '../../shared/api/types'
 import { ApiError } from '../../shared/api/http'
 import { Button } from '../../shared/ui/Button'
 import { bulkDeleteManagedAssignments, createManagedAssignment, listManagedAssignments, updateManagedAssignment } from './api'
@@ -14,6 +14,7 @@ export function QuestionManagementPage() {
   const [grades, setGrades] = useState<number[]>([1])
   const [title, setTitle] = useState('')
   const [prompt, setPrompt] = useState('')
+  const [inputType, setInputType] = useState<AssignmentInputType>('TEXT')
   const [editingId, setEditingId] = useState<string | null>(null)
   const [filterGrade, setFilterGrade] = useState<'all' | number>('all')
   const [selectedIds, setSelectedIds] = useState<string[]>([])
@@ -31,6 +32,7 @@ export function QuestionManagementPage() {
     setGrades([1])
     setTitle('')
     setPrompt('')
+    setInputType('TEXT')
   }
 
   const createMutation = useMutation({
@@ -43,7 +45,7 @@ export function QuestionManagementPage() {
     onError: (error) => setMessage(error instanceof Error ? error.message : '题目添加失败。'),
   })
   const updateMutation = useMutation({
-    mutationFn: ({ id, input }: { id: string; input: { title: string; prompt: string; grade: number } }) => updateManagedAssignment(id, input),
+    mutationFn: ({ id, input }: { id: string; input: { title: string; prompt: string; grade: number; input_type: AssignmentInputType } }) => updateManagedAssignment(id, input),
     onSuccess: async () => {
       resetForm()
       setMessage('题目修改已保存。')
@@ -77,6 +79,7 @@ export function QuestionManagementPage() {
     setGrades([assignment.grade])
     setTitle(assignment.title)
     setPrompt(assignment.prompt)
+    setInputType(assignment.input_type)
     setMessage('')
   }
 
@@ -84,9 +87,9 @@ export function QuestionManagementPage() {
     event.preventDefault()
     setMessage('')
     if (editingId) {
-      updateMutation.mutate({ id: editingId, input: { grade: grades[0], title: title.trim(), prompt: prompt.trim() } })
+      updateMutation.mutate({ id: editingId, input: { grade: grades[0], title: title.trim(), prompt: prompt.trim(), input_type: inputType } })
     } else {
-      createMutation.mutate({ grades, title: title.trim(), prompt: prompt.trim() })
+      createMutation.mutate({ grades, title: title.trim(), prompt: prompt.trim(), input_type: inputType })
     }
   }
 
@@ -110,6 +113,10 @@ export function QuestionManagementPage() {
           <form onSubmit={handleSubmit} className="management-form">
             {editingId ? <label>适用年级<select value={grades[0]} onChange={(event) => setGrades([Number(event.target.value)])}>{GRADES.map((grade) => <option key={grade} value={grade}>{grade} 年级</option>)}</select></label> : <fieldset className="management-grade-fieldset"><legend>适用年级（可多选）</legend><div className="management-grade-options">{GRADES.map((grade) => <label key={grade}><input type="checkbox" checked={grades.includes(grade)} onChange={() => toggleGrade(grade)} /><span>{grade} 年级</span><Check size={14} aria-hidden="true" /></label>)}</div></fieldset>}
             <label>题目名称<input required minLength={2} maxLength={160} value={title} onChange={(event) => setTitle(event.target.value)} placeholder="例如：校园里的安静角落" /></label>
+            <fieldset className="management-input-type"><legend>作答方式</legend><div>
+              <label><input type="radio" name="input-type" value="TEXT" checked={inputType === 'TEXT'} onChange={() => setInputType('TEXT')} /><Keyboard size={17} aria-hidden="true" /><span><strong>文字输入</strong><small>初稿和终稿键盘输入</small></span></label>
+              <label><input type="radio" name="input-type" value="VOICE" checked={inputType === 'VOICE'} onChange={() => setInputType('VOICE')} /><Mic size={17} aria-hidden="true" /><span><strong>语音输入</strong><small>初稿和终稿录音转写</small></span></label>
+            </div></fieldset>
             <label>题目内容<textarea required minLength={5} maxLength={3000} rows={7} value={prompt} onChange={(event) => setPrompt(event.target.value)} placeholder="写下学生需要思考和回答的完整问题。" /></label>
             <div className="management-form-actions"><Button type="submit" disabled={pendingSave || grades.length === 0 || title.trim().length < 2 || prompt.trim().length < 5}>{editingId ? <Pencil size={17} aria-hidden="true" /> : <Plus size={17} aria-hidden="true" />}{pendingSave ? '正在保存…' : editingId ? '保存修改' : `发布到 ${grades.length} 个年级`}</Button>{editingId && <Button type="button" variant="quiet" onClick={resetForm}><X size={17} aria-hidden="true" />取消编辑</Button>}</div>
           </form>
@@ -124,7 +131,7 @@ export function QuestionManagementPage() {
             {visibleAssignments.map((assignment) => <li key={assignment.id} className={selectedIds.includes(assignment.id) ? 'is-selected' : undefined}>
               <label className="managed-select"><input type="checkbox" checked={selectedIds.includes(assignment.id)} onChange={() => { setSelectedIds((current) => current.includes(assignment.id) ? current.filter((id) => id !== assignment.id) : [...current, assignment.id]); setConfirmBulkDelete(false) }} /><span className="sr-only">选择题目：{assignment.title}</span></label>
               <div className="managed-question-grade">{assignment.grade}<span>年级</span></div>
-              <div className="managed-question-copy"><h3>{assignment.title}</h3><p>{assignment.prompt}</p></div>
+              <div className="managed-question-copy"><h3>{assignment.title}</h3><span className="managed-input-badge">{assignment.input_type === 'VOICE' ? <><Mic size={13} />语音作答</> : <><Keyboard size={13} />文字作答</>}</span><p>{assignment.prompt}</p></div>
               <div className="managed-question-actions"><button type="button" className="managed-edit" onClick={() => beginEdit(assignment)} aria-label={`修改题目：${assignment.title}`}><Pencil size={17} aria-hidden="true" /></button><button type="button" className="managed-delete" onClick={() => { setSelectedIds([assignment.id]); setConfirmBulkDelete(true); setMessage('') }} aria-label={`删除题目：${assignment.title}`}><Trash2 size={17} aria-hidden="true" /></button></div>
             </li>)}
           </ol>

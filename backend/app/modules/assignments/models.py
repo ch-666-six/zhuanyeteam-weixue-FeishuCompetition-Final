@@ -13,6 +13,7 @@ class Assignment(Base):
     __tablename__ = "assignments"
     __table_args__ = (
         CheckConstraint("grade >= 1 AND grade <= 7", name="ck_assignments_grade_range"),
+        CheckConstraint("input_type IN ('TEXT', 'VOICE')", name="ck_assignments_input_type"),
         Index("ix_assignments_grade", "grade"),
     )
 
@@ -20,6 +21,7 @@ class Assignment(Base):
     title: Mapped[str] = mapped_column(String(160))
     prompt: Mapped[str] = mapped_column(Text)
     grade: Mapped[int] = mapped_column(Integer)
+    input_type: Mapped[str] = mapped_column(String(16), default="TEXT", server_default="TEXT")
     published_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
     deadline: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(

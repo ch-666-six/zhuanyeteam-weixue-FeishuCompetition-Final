@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { ArrowRight, BookOpenCheck, Clock3, RefreshCw } from 'lucide-react'
+import { ArrowRight, BookOpenCheck, Clock3, Keyboard, Mic, RefreshCw } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import type { AuthSession } from '../auth/auth'
 import { AppShell } from '../../shared/ui/AppShell'
@@ -67,12 +67,21 @@ export function AssignmentsPage({ auth, onLogout }: AssignmentsPageProps) {
           <ul className="assignment-list" aria-label="作业列表">
             {assignments.map((assignment) => {
               const status = assignmentStatus(assignment)
+              const inputLabel = assignment.input_type === 'VOICE' ? '语音作答' : '文字作答'
               return (
                 <li key={assignment.id}>
                   <Link className="assignment-row" to={`/assignments/${assignment.id}`}>
                     <div className="assignment-main">
                       <div className="assignment-meta">
                         <span className={`status-badge status-badge--${status.tone}`}>{status.label}</span>
+                        <span
+                          className={`assignment-input-icon assignment-input-icon--${assignment.input_type.toLowerCase()}`}
+                          aria-label={inputLabel}
+                          title={inputLabel}
+                          data-tooltip={inputLabel}
+                        >
+                          {assignment.input_type === 'VOICE' ? <Mic size={15} aria-hidden="true" /> : <Keyboard size={15} aria-hidden="true" />}
+                        </span>
                         <span><Clock3 size={15} aria-hidden="true" />{deadlineLabel(assignment.deadline)}</span>
                       </div>
                       <h2>{assignment.title}</h2>
@@ -89,4 +98,3 @@ export function AssignmentsPage({ auth, onLogout }: AssignmentsPageProps) {
     </AppShell>
   )
 }
-

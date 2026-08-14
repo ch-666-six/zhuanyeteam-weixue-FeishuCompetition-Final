@@ -1,15 +1,15 @@
-import type { ManagedAssignment } from '../../shared/api/types'
+import type { AssignmentInputType, ManagedAssignment } from '../../shared/api/types'
 import { request } from '../../shared/api/http'
 
 export function listManagedAssignments(): Promise<ManagedAssignment[]> {
   return request('/question-management')
 }
 
-export function createManagedAssignment(input: { title: string; prompt: string; grades: number[] }): Promise<ManagedAssignment[]> {
+export function createManagedAssignment(input: { title: string; prompt: string; grades: number[]; input_type: AssignmentInputType }): Promise<ManagedAssignment[]> {
   return request('/question-management', { method: 'POST', body: JSON.stringify(input) })
 }
 
-export function updateManagedAssignment(id: string, input: { title: string; prompt: string; grade: number }): Promise<ManagedAssignment> {
+export function updateManagedAssignment(id: string, input: { title: string; prompt: string; grade: number; input_type: AssignmentInputType }): Promise<ManagedAssignment> {
   return request(`/question-management/${id}`, { method: 'PUT', body: JSON.stringify(input) })
 }
 

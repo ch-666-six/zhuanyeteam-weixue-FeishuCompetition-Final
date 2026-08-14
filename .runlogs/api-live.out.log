@@ -1,0 +1,26 @@
+INFO:     127.0.0.1:57453 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57453 - "GET /api/v1/question-management HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57453 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57455 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64239 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63301 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63302 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64063 - "GET /api/v1/assignments/6fa067fc-6d4e-583d-9ea0-22939ef4fca6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59248 - "POST /api/v1/sessions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:55843 - "GET /api/v1/sessions/4df20944-94f2-4ee0-8976-c7063e87f7f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62900 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56194 - "GET /api/v1/assignments/198c5144-f74a-5134-b939-9a13bfced6f4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57580 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63365 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63004 - "GET /api/v1/growth?grade=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65047 - "GET /api/v1/question-management HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59761 - "GET /api/v1/question-management HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54731 - "POST /api/v1/question-management HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64028 - "GET /api/v1/question-management HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55411 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50256 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61321 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62088 - "GET /api/v1/assignments/b2bf6309-0e9c-4129-ad27-a5f6bb7a4db6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60133 - "POST /api/v1/sessions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64132 - "GET /api/v1/sessions/61d9d891-764f-49f9-8367-a64cf8a635b5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54256 - "POST /api/v1/sessions/61d9d891-764f-49f9-8367-a64cf8a635b5/transcriptions?stage=initial HTTP/1.1" 503 Service Unavailable

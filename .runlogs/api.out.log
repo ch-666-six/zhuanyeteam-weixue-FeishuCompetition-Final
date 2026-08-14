@@ -1,0 +1,15 @@
+INFO:     127.0.0.1:54976 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54976 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54981 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54976 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51579 - "GET /api/v1/demo/students HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:51582 - "GET /api/v1/demo/students HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:50826 - "GET /api/v1/demo/students HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:50831 - "GET /api/v1/demo/students HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:52135 - "GET /api/v1/demo/students HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:52138 - "GET /api/v1/demo/students HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:64054 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64054 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64061 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55128 - "GET /api/v1/demo/students HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:55133 - "GET /api/v1/demo/students HTTP/1.1" 500 Internal Server Error

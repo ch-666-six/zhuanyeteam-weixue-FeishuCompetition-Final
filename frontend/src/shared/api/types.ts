@@ -10,11 +10,14 @@ export interface DemoLoginResponse {
   student: DemoStudent
 }
 
+export type AssignmentInputType = 'TEXT' | 'VOICE'
+
 export interface AssignmentSummary {
   id: string
   title: string
   prompt: string
   grade: number
+  input_type: AssignmentInputType
   deadline: string | null
   availability: 'OPEN' | 'CLOSED'
   session: SessionSnapshot | null
@@ -29,6 +32,7 @@ export interface ManagedAssignment {
   title: string
   prompt: string
   grade: number
+  input_type: AssignmentInputType
   published_at: string | null
   created_at: string
 }

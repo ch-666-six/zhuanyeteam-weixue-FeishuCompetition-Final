@@ -9,6 +9,7 @@ import { Button } from '../../shared/ui/Button'
 import { getSession, submitInitialAnswer } from './api'
 import { sessionRoute } from './navigation'
 import { useAnswerDraft } from './useAnswerDraft'
+import { VoiceAnswerRecorder } from './VoiceAnswerRecorder'
 
 interface InitialAnswerPageProps {
   auth: AuthSession
@@ -35,6 +36,7 @@ export function InitialAnswerPage({ auth, onLogout }: InitialAnswerPageProps) {
   })
   const draft = useAnswerDraft(auth.student.id, assignmentId || 'pending', sessionId, 'INITIAL_DRAFT', sessionQuery.data?.version ?? 1)
   const answer = review ? sessionQuery.data?.initial_answer ?? '' : draft.value
+  const voiceInput = assignmentQuery.data?.input_type === 'VOICE'
   const answerError = answer.trim().length === 0 ? '请先写下你的观点和理由。' : ''
 
   const submitMutation = useMutation({
@@ -71,20 +73,21 @@ export function InitialAnswerPage({ auth, onLogout }: InitialAnswerPageProps) {
               if (!review && !answerError && session) submitMutation.mutate()
             }}
           >
-            <label htmlFor="initial-answer">我的初答</label>
+            <label htmlFor="initial-answer">{voiceInput ? '语音转写稿' : '我的初答'}</label>
+            {!review && voiceInput && <VoiceAnswerRecorder token={auth.token} sessionId={sessionId} stage="initial" value={answer} onTranscription={draft.setValue} disabled={!session} />}
             <textarea
               id="initial-answer"
               value={answer}
               onChange={(event) => draft.setValue(event.target.value)}
-              readOnly={review}
-              placeholder="我认为……因为……"
+              readOnly={review || voiceInput}
+              placeholder={voiceInput ? '录音完成后，转写文字会显示在这里。' : '我认为……因为……'}
               maxLength={12000}
               rows={12}
               aria-invalid={Boolean(submitMutation.isError)}
               aria-describedby="answer-help answer-count answer-error"
             />
             <div className="field-footer">
-              <span id="answer-help">{review ? <><CheckCircle2 size={15} />已提交版本，仅供查看</> : <><Save size={15} />草稿已保存在本机</>}</span>
+              <span id="answer-help">{review ? <><CheckCircle2 size={15} />已提交版本，仅供查看</> : voiceInput ? <><Save size={15} />转写稿已保存在本机</> : <><Save size={15} />草稿已保存在本机</>}</span>
               <span id="answer-count">{answer.length} / 12000 字</span>
             </div>
             {submitMutation.isError && <p id="answer-error" className="field-error" role="alert">{submitMutation.error.message}</p>}
