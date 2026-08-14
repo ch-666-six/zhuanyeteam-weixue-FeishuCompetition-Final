@@ -1,0 +1,40 @@
+
+> weixue-frontend@0.1.0 dev
+> vite --config vite.config.ts --host 127.0.0.1 --port 5173
+
+
+  [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m419[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[2m14:19:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/ui/AppShell.tsx[22m
+[2m14:19:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/assignments/AssignmentDetailPage.tsx[22m
+[2m14:19:48[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/InitialAnswerPage.tsx[22m
+[2m14:19:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/AnalysisPendingPage.tsx[22m
+[2m14:19:50[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/InitialAnalysisPage.tsx[22m
+[2m14:19:52[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/CoachingPage.tsx[22m
+[2m14:19:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/FinalDraftPage.tsx[22m
+[2m14:19:54[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/EvaluationPendingPage.tsx[22m
+[2m14:19:55[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/ResultPage.tsx[22m
+[2m14:20:48[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/ui/AppShell.tsx[22m
+[2m14:20:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/styles/base.css[22m
+[2m14:28:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/ui/AssignmentProgress.tsx[22m
+[2m14:28:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/ui/AppShell.tsx[22m
+[2m14:28:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/AnalysisPendingPage.tsx[22m
+[2m14:28:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/InitialAnalysisPage.tsx[22m
+[2m14:28:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/CoachingPage.tsx[22m
+[2m14:28:41[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/FinalDraftPage.tsx[22m
+[2m14:28:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/EvaluationPendingPage.tsx[22m
+[2m14:28:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/ResultPage.tsx[22m
+[2m14:29:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/InitialAnswerPage.tsx[22m
+[2m14:30:34[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/InitialAnswerPage.tsx[22m
+[2m14:30:35[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/FinalDraftPage.tsx[22m
+[2m14:31:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/InitialAnalysisPage.tsx[22m
+[2m14:31:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/CoachingPage.tsx[22m
+[2m14:32:01[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/styles/base.css[22m
+[2m14:34:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/ui/AssignmentProgress.tsx[22m
+[2m14:34:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/ui/AppShell.tsx[22m
+[2m14:35:00[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/InitialAnswerPage.tsx[22m
+[2m14:35:01[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/InitialAnalysisPage.tsx[22m
+[2m14:35:03[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/CoachingPage.tsx[22m
+[2m14:35:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/features/answer-session/FinalDraftPage.tsx[22m
+[2m14:35:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/shared/styles/base.css[22m

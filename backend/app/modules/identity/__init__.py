@@ -1,0 +1,2 @@
+"""Student identity module."""
+

@@ -1,0 +1,371 @@
+INFO:     127.0.0.1:53931 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51069 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51069 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51073 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51075 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52325 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52327 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:65047 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:65046 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:65069 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57730 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57735 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57736 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57737 - "GET /api/v1/assignments/6fa067fc-6d4e-583d-9ea0-22939ef4fca6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57744 - "GET /api/v1/sessions/8bc76cc8-bd32-49ca-b4fb-e6b2c5424674 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63799 - "GET /api/v1/assignments/198c5144-f74a-5134-b939-9a13bfced6f4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62925 - "POST /api/v1/sessions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:51000 - "GET /api/v1/sessions/b4b22165-5ddb-4c2b-8a5f-e824705d7ab5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56874 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62174 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64375 - "GET /api/v1/assignments/5725cc17-cfaf-5c03-8851-06cf55b7fe82 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63740 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/final-evaluation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58175 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65331 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65341 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65342 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65354 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65355 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50406 - "GET /api/v1/assignments/18c62cad-58a9-5149-b94c-df21d965d4e8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59222 - "POST /api/v1/sessions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61107 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52685 - "POST /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/initial-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62147 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51511 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/initial-analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53646 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53496 - "GET /api/v1/assignments/1e4b1d33-0478-5552-9190-5deadfff022e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52484 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49995 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49996 - "GET /api/v1/assignments/1e4b1d33-0478-5552-9190-5deadfff022e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52390 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52391 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60417 - "GET /api/v1/assignments/1e4b1d33-0478-5552-9190-5deadfff022e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59367 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65136 - "GET /api/v1/assignments/18c62cad-58a9-5149-b94c-df21d965d4e8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55415 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/initial-analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55416 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57012 - "POST /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/coaching/start HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60692 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/coaching HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64464 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/coaching/turns/5f3f671c-6697-4acb-9ed3-1e9d44bceddf/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60826 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60825 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49778 - "POST /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/coaching/turns/5f3f671c-6697-4acb-9ed3-1e9d44bceddf/response HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52786 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/coaching HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49755 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49892 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/coaching HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53692 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/coaching/turns/ccba85b4-dd36-4ad8-90af-3dde25676c2b/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54127 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:54126 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58610 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58609 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49993 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49992 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52423 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328/coaching HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52422 - "GET /api/v1/sessions/150b8820-7c99-4867-b7e2-3dcde3dc0328 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58167 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64236 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:64237 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:61776 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62736 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62735 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57592 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54958 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:54957 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51950 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51999 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52000 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62300 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61998 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:61997 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:61548 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:61549 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51735 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51734 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59327 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59328 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50520 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50521 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60009 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60008 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58938 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58939 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/initial-analysis HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52081 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49380 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59426 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51638 - "GET /api/v1/assignments/5725cc17-cfaf-5c03-8851-06cf55b7fe82 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63460 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/final-evaluation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62256 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/final-evaluation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62162 - "GET /api/v1/sessions/a30cd57c-8f7d-4d41-8168-0c728d53db5b/final-evaluation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60372 - "GET /api/v1/assignments/assignment-3-1 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:64442 - "GET /api/v1/assignments/assignment-3-1 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60367 - "GET /api/v1/assignments/assignment-3-1 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52248 - "GET /api/v1/assignments/assignment-3-1 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51940 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51940 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51988 - "POST /api/v1/demo/login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51988 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51988 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51988 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60296 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50679 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62546 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62546 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62546 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62546 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62546 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63988 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63995 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63998 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64004 - "GET /api/v1/assignments/198c5144-f74a-5134-b939-9a13bfced6f4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64008 - "GET /api/v1/sessions/b4b22165-5ddb-4c2b-8a5f-e824705d7ab5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50554 - "POST /api/v1/sessions/b4b22165-5ddb-4c2b-8a5f-e824705d7ab5/initial-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52416 - "GET /api/v1/sessions/b4b22165-5ddb-4c2b-8a5f-e824705d7ab5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62384 - "GET /api/v1/sessions/b4b22165-5ddb-4c2b-8a5f-e824705d7ab5/initial-analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61141 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50473 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51474 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59641 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57827 - "GET /api/v1/growth?grade=6 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62001 - "GET /api/v1/growth?grade=6 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50893 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64570 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52027 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51561 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49511 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49509 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58808 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65406 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64625 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59315 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55328 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58276 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55251 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64748 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60237 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65299 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50698 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51492 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50520 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53275 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59358 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57415 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60819 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60396 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51431 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59864 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62094 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50709 - "GET /api/v1/assignments/439703de-b5fa-58ff-9402-5ea926dc6b64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53892 - "GET /api/v1/assignments/439703de-b5fa-58ff-9402-5ea926dc6b64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53895 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53898 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53900 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53903 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58078 - "GET /api/v1/assignments/439703de-b5fa-58ff-9402-5ea926dc6b64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57044 - "GET /api/v1/assignments/439703de-b5fa-58ff-9402-5ea926dc6b64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64130 - "POST /api/v1/sessions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56573 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56932 - "POST /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/initial-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50422 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58674 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/initial-analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55706 - "POST /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching/start HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51838 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49205 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching/turns/02e8e561-6231-4bc4-9041-3f5681a39884/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57076 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57075 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60190 - "POST /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching/turns/02e8e561-6231-4bc4-9041-3f5681a39884/response HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53977 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51219 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51469 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64457 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching/turns/e0a2a672-9e29-4436-b033-4b02a9399233/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55073 - "POST /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/coaching/end HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64042 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/initial-analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64043 - "GET /api/v1/assignments/439703de-b5fa-58ff-9402-5ea926dc6b64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56515 - "POST /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/final-answer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49381 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65324 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/final-evaluation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56374 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56807 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59885 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65109 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49416 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61329 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63112 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62274 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62864 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65357 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55564 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57580 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61764 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56105 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59381 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60898 - "GET /api/v1/assignments/439703de-b5fa-58ff-9402-5ea926dc6b64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50214 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/final-evaluation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62686 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62536 - "GET /api/v1/sessions/def4361d-4208-46f7-a0cd-952d500b2918/final-evaluation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61108 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61128 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61174 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55725 - "GET /api/v1/assignments/assignment-3-1 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:64098 - "GET /api/v1/assignments/assignment-3-1 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53908 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53915 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53918 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53925 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54375 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51001 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63458 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59648 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58765 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52068 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64292 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64301 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64302 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64307 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52596 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53448 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53136 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51663 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51666 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51669 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51670 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51674 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51680 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51683 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62346 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49344 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63615 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57219 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65171 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52073 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52078 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52079 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52089 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52096 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52103 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54595 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59596 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58219 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57953 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49157 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58897 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58960 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64059 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56038 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57968 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58770 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62797 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53929 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61421 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59264 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59264 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59264 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59266 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50816 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53481 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55210 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50516 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53353 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53353 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57627 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57627 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52471 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63144 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63147 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63148 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63157 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63160 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63163 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49976 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51792 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56711 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56235 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57598 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56861 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63557 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52076 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51050 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57289 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55637 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56410 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62194 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58193 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52711 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56836 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58973 - "GET /openapi.json?probe=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57160 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60728 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60728 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53906 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53906 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54370 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60015 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52630 - "POST /api/v1/demo/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52631 - "GET /api/v1/assignments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52634 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51772 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65388 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62847 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58393 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51820 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56701 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63538 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50979 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56158 - "GET /health/live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58936 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61271 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64737 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64737 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64737 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63174 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63176 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63178 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53190 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59304 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57597 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50888 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64487 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52216 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51204 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51207 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59862 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62905 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63091 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49828 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65238 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59698 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58519 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60398 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52215 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52216 - "GET /api/v1/demo/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63794 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57418 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56709 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54632 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64755 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53906 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53908 - "GET /api/v1/growth?grade=5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53910 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56512 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58223 - "GET /api/v1/growth?grade=all HTTP/1.1" 404 Not Found

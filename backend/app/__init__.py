@@ -1,0 +1,2 @@
+"""Weixue backend application."""
+
